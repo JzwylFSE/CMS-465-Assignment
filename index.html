@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Staff Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Hospital Portal</h2>
+            <p>Authorized Personnel Only</p> 
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="userid">Name or User ID</label>
+                <input type="text" id="userid" name="userid" placeholder="Enter: website owner's name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter: 12345" required>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="cancel-btn" onclick="document.getElementById('loginForm').reset()">Cancel</button>
+                <button type="submit" class="submit-btn">Login</button>
+            </div>
+            <p id="error-msg" class="error-message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
